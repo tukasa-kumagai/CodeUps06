@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.cards2 {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
