@@ -21,10 +21,10 @@
   @include mq("md") {
     height: rem(162);
     right: rem(124);
-    top: rem(533);
-    width: rem(125);
+    top: rem(539);
+    width: rem(71);
     z-index: 1;
-
+    right: calc(50% - min(48.5vw, rem(539)));
   }
 
 }
@@ -71,24 +71,25 @@
 }
 
 .card-list-items {
+  margin-top: rem(42);
 
+ 
   @include mq("md") {
     margin: 0 auto;
-    margin-top: rem(00);
+    margin-top: rem(30);
 
   }
 }
 
 .card-list-item {
-  width: rem(600);
+ 
   margin: 0 auto;
-  max-width: rem(345);
+
   box-shadow: 0 0 rem(8) gray;
   padding: rem(15) rem(16) rem(24) rem(16);
-margin-top: rem(40);
+margin-top: rem(0);
 max-width: 100%;
   @include mq("md") {
-    max-width: rem(520);
   
 
   }

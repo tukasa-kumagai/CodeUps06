@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" ; />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
@@ -20,6 +20,8 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
+  <link rel="icon" href="./assets/images/common/favicon.ico" id="favicon">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/common/apple-touch-icon-180x180.png">
   <!-- css -->
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -35,12 +37,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!--メインのJS-->
-
   <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -135,20 +136,12 @@
   </header>
   <div class="fv"></div>
   <div class="main-mv">
-    <ul class="sp-slide-items">
-      <li><img src="./assets/images/common/SP-TOP-MV(1).png" alt="トップMV1"></li>
-      <li><img src="./assets/images/common/SP-TOP-MV(2).png" alt="トップMV2"></li>
-      <li><img src="./assets/images/common/SP-TOP-MV(3).png" alt="トップMV3"></li>
-      <li><img src="./assets/images/common/SP-TOP-MV(4).png" alt="トップMV4"></li>
-    </ul>
-    <ul class="pc-slide-items">
-      <li>
-        <img class="img-wrap" src="./assets/images/common/TOP-MV(4).png" alt="トップMV4">
-      </li>
-      <li><img src="./assets/images/common/TOP-MV(1).png" alt="トップMV1"></li>
-      <li><img src="./assets/images/common/TOP-MV(2).png" alt="トップMV2"></li>
-      <li><img src="./assets/images/common/TOP-MV(3).png" alt="トップMV3"></li>
-    </ul>
+    <div class="slide">
+      <div class="slide-image"></div>
+      <div class="slide-image"></div>
+      <div class="slide-image"></div>
+    </div>
+
     <div class="main-mv__text">
       <p class="main-mv__title">DIVING</p>
       <p class="main-mv__subtitle">into the ocean</p>
@@ -157,7 +150,8 @@
   <main>
     <p class="pagetop"><a href="#"><img class="pagetop__button" src="./assets/images/common/page-top-bag.png"
           alt="戻るボタン"></a></p>
-    <section class="campaign">
+
+    <section class="l-campaign campaign">
       <div class="campaign__inner">
         <div class="title-inner">
           <div class="section-header">
@@ -248,7 +242,7 @@
           </div><!-- /swiper -->
         </div><!-- /swiper-area -->
         <div class="swiper-pagination"></div>
-        <div class="button-inner lーposition-inner">
+        <div class="button-inner ">
           <a href="#" class="button">
             <div class="button__bg">
               <span class="button__text">View more</span>
@@ -259,7 +253,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about l-about">
       <div class="inner">
         <div class="about__title-inner">
           <div class="section-header">
@@ -298,7 +292,6 @@
       </div>
     </section>
     <section class="information">
-      <h2></h2>
       <div class="inner">
         <div class="information__title-inner">
           <div class="section-header">
@@ -327,11 +320,8 @@
         </div>
       </div>
     </section>
-    <section class="blog">
+    <section class="blog l-blog">
       <div class="inner">
-        <div class="blog__bg-img">
-          <img src="./assets/images/top/Group-240.png" alt="魚画像">
-        </div>
         <div class="blog__title-inner">
           <div class="section-header">
             <h2 class="section-header__english-color">Blog</h2>
@@ -442,7 +432,6 @@
           </a>
         </div>
       </div>
-    </div>
     </section>
     <section class="price">
       <div class="inner">
@@ -553,7 +542,7 @@
             <div class="contact__maim">
               <div class="contact__head">
                 <div class="contact__logo">
-                  <img src="./assets/images/common/CodeUps-Underline.png" alt="ロゴ画像">
+                  <h2><img src="./assets/images/common/CodeUps-Underline.png" alt="ロゴ画像"></h2>
                 </div>
                 <div class="contact__head-under">
                   <div class="contact__information">
@@ -667,4 +656,5 @@
     </div>
   </footer>
 </body>
+
 </html>

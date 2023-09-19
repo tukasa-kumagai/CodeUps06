@@ -2,8 +2,8 @@
 
 .price {
     background-color: $green2;
-    padding-bottom: rem(75);
-    margin-top: rem(73);
+    padding-bottom: rem(70);
+    margin-top: rem(68);
     padding-top: rem(80);
 
     @include mq("md") {
@@ -30,6 +30,7 @@
         top: rem(928);
         width: rem(439);
         z-index: 10000;
+        left: calc(50% - min(48.5vw, 38.75rem));
 
     }
 

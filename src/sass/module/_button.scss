@@ -4,9 +4,8 @@
 	position: relative;
 	width: rem(207);
 	padding-bottom: rem(10);
+display: inline-block;
 
-	margin: 0 auto;
-  display: table;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -24,7 +23,7 @@
 
 	@include mq("md") {
 		left: 70%;
-		width: rem(50);
+		width: rem(40);
 	}
 }
 
@@ -119,9 +118,8 @@
   line-height: 2;
   font-weight: 400;
   margin-top: rem(3);
-  margin-left: rem(29);
-  top: rem(3);
-
+  top: rem(6);
+  left: rem(-24);
   @include mq('md') {
     line-height: rem(35);
     font-size: rem(14);
@@ -130,6 +128,8 @@
     font-weight: 500;
     margin-left: rem(22);
     margin-top: rem(1);
+    top: rem(0);
+    left: rem(0);
   }
 }
 

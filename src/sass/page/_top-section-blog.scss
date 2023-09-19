@@ -17,6 +17,14 @@
 
 }
 
+.l-blog {
+  margin-top: rem(75);
+
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+
 .blog::before {
   background-image: url(/assets/images/top/Group-240.png);
   background-repeat: no-repeat;
@@ -28,9 +36,10 @@
   @include mq("md") {
     height: rem(185);
     left: rem(105);
-    top: rem(21);
+    top: rem(30);
     width: rem(371);
-    z-index: 10000;
+    z-index: 100;
+    left: calc(50% - min(48.5vw, 38.75rem));
   }
 }
 
@@ -53,12 +62,12 @@
 
 
 .blog__title-inner {
-  max-width: rem(1280);
+
   margin: 0 auto;
-  margin-top: rem(80);
+
 
   @include mq("md") {
-    max-width: rem(1080);
+
     margin: 0 auto;
 
 

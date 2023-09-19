@@ -3,14 +3,29 @@
 .card2 {
 
     @include mq("md") {
-        max-width: calc(50% - rem(40) * 1 / 2); //計算式calc(100%をカード数で割る - カード間 * 隙間の数/カード数)
+      
+      
     }
 }
 
 
-.card2 +.card2 {
-    margin-left: (40);
+.card2 + .card2 {
+    margin-left: rem(0);
+
+    @include mq("md") {
+        margin-left: rem(20);
+      
+    }
 }
+
+.card2:nth-child(n + 2) {
+    margin-top: rem(16);
+  
+    @include mq("md") {
+     margin-left: rem(0);
+     margin-top: rem(0);
+    }
+  }
 .card2__head {
     display: flex;
 
